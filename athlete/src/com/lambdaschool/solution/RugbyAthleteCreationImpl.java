@@ -7,10 +7,4 @@ public class RugbyAthleteCreationImpl implements AthleteService
     {
         System.out.println(sport);
     }
-
-    @Override
-    public String readAthlete()
-    {
-        return "Not Implemented";
-    }
 }

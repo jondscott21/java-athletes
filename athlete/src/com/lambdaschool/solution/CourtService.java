@@ -1,7 +1,6 @@
 package com.lambdaschool.solution;
 
-public interface Processor
+public interface CourtService
 {
-    void displayAthlete(String sport);
     void displayCourt(String court);
 }

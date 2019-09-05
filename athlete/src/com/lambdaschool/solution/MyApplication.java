@@ -3,10 +3,12 @@ package com.lambdaschool.solution;
 public class MyApplication implements Processor
 {
     private AthleteService athlete;
+    private CourtService court;
 
-    public MyApplication(AthleteService athlete)
+    public MyApplication(AthleteService athlete, CourtService court)
     {
         this.athlete = athlete;
+        this.court = court;
     }
 
     @Override
@@ -18,8 +20,18 @@ public class MyApplication implements Processor
     }
 
     @Override
-    public String readAthlete()
+    public void displayCourt(String field)
     {
-        return "Not Implemented";
+        if(field.equals("Hockey"))
+        {
+            System.out.println("************");
+            court.displayCourt(field + " Rink");
+            System.out.println("************\n");
+        } else
+        {
+            System.out.println("************");
+            court.displayCourt(field + " Field");
+            System.out.println("************\n");
+        }
     }
 }

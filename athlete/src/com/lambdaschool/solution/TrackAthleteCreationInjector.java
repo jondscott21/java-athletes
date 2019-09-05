@@ -5,6 +5,6 @@ public class TrackAthleteCreationInjector implements AthleteCreationInjector
     @Override
     public Processor getProcess()
     {
-        return new MyApplication(new TrackAthleteCreationImpl());
+        return new MyApplication(new TrackAthleteCreationImpl(), null);
     }
 }

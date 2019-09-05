@@ -5,6 +5,6 @@ public class HockeyAthleteCreationInjector implements AthleteCreationInjector
     @Override
     public Processor getProcess()
     {
-        return new MyApplication(new HockeyAthleteCreationImpl());
+        return new MyApplication(new HockeyAthleteCreationImpl(), null);
     }
 }
