@@ -10,23 +10,23 @@ public class Main
         // Create a Track Athlete
         injector = new TrackAthleteCreationInjector();
         app = injector.getProcess();
-        app.displayAthlete();
+        app.displayAthlete("Track");
 
         // Create a Hockey Athlete
-        injector = new HockeyAthleteCreationInjector();
-        app = injector.getProcess();
-        app.displayAthlete();
+//        injector = new HockeyAthleteCreationInjector();
+//        app = injector.getProcess();
+//        app.displayAthlete();
 
 
         // Create a Rugby Athlete
-        injector = new RugbyAthleteCreationInjector();
-        app = injector.getProcess();
-        app.displayAthlete();
+//        injector = new RugbyAthleteCreationInjector();
+//        app = injector.getProcess();
+//        app.displayAthlete();
 
         // Create a Baseball Athlete
-        injector = new BaseballAthleteCreationInjector();
-        app = injector.getProcess();
-        app.displayAthlete();
+//        injector = new BaseballAthleteCreationInjector();
+//        app = injector.getProcess();
+//        app.displayAthlete();
 
     }
 }
